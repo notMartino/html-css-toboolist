@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Toboolist</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Icone Font Awesome -->
+    <script src="https://kit.fontawesome.com/2e0cc00556.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <!-- Header con logo, titolo e barra 100%-->
+    <header>
+      <img src="img/logo.png" id="logo" alt="logo">
+      <span id="logo-testo">
+        Toboolist
+      </span>
+    </header>
+
+    <!-- Main con 2 bottoni e lista con obbiettivi -->
+    <main>
+      <!-- Sezione iniziale con bottoni -->
+      <section id="barra-nav">
+        <button type="button" class="bottone" id="bottone-blu" name="add-task">Add Task</button>
+        <button type="button" class="bottone" id="bottone-bianco" name="add-section">Add Section</button>
+      </section>
+
+      <!-- Sezione con elenco cose da fare -->
+      <section>
+
+        <ul>
+          <!-- Lista New Task -->
+          <li class="titolo">
+            <i class="fas fa-caret-down"></i>
+            New Task
+            <ul>
+              <li class="compito fatto">
+                Quarterly Newsletter
+                <div class="argomento blu"></div>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Lista Today -->
+          <li class="titolo">
+            <i class="fas fa-caret-down"></i>
+            Today
+            <ul>
+
+              <li class="compito fatto">
+                Recruiting blog post
+                <div class="argomento blu"></div>
+              </li>
+
+              <li class="compito fatto">
+                Mobile app launch
+                <div class="argomento viola"></div>
+              </li>
+
+              <li class="compito non-fatto">
+                Interview Jhon H.
+                <div class="argomento verde"></div>
+              </li>
+
+              <li class="compito fatto">
+                Summit update to mobile storefronts
+                <div class="argomento arancio"></div>
+              </li>
+
+            </ul>
+          </li>
+
+          <!-- Lista Upcoming -->
+          <li class="titolo">
+            <i class="fas fa-caret-down"></i>
+            Upcoming
+            <ul>
+
+              <li class="compito non-fatto">
+                Schedule meeting with Alex
+                <div class="argomento"></div>
+              </li>
+
+              <li class="compito fatto">
+                Homepage refresh
+                <div class="argomento rosa"></div>
+              </li>
+
+              <li class="compito fatto">
+                Onboard new Sales team members
+                <div class="argomento lime"></div>
+              </li>
+
+              <li class="compito fatto">
+                Review editorial claendar
+                <div class="argomento blu"></div>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+
+      </section>
+    </main>
+
+  </body>
+</html>

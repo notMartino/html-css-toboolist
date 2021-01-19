@@ -1,0 +1,148 @@
+/* --- Proprietà generiche --- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+body{
+  background-color: #f7f7f7;
+}
+
+/* --- Proprietà Header --- */
+header{
+  background-color: white;
+  min-height: 100px;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 25px 20px;
+}
+
+/* Span al posto di H1 e vertical-align istruzioni dei Tutor */
+#logo-testo{
+    font-family: arial;
+    vertical-align: middle;
+}
+#logo{
+  vertical-align: middle;
+}
+
+/* --- Proprietà Main --- */
+main{
+  width: 80%;
+  margin: 50px auto 30px;
+  background-color: white;
+  border-radius: 10px;
+  min-height: 200px;
+  padding: 30px 0px 40px;
+}
+
+#barra-nav{
+    padding: 0px 50px 15px;
+    border-bottom: 3px solid #f7f7f7;
+}
+
+  /* --- Classe generica bottoni e id con specifiche --- */
+.bottone{
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+#bottone-blu{
+  background-color: dodgerblue;
+  border: 0;
+  color: white;
+}
+#bottone-bianco{
+  border: 1px solid #c0c0c0;
+  background-color: white;
+  color: #c0c0c0;
+}
+
+  /* --- Proprietà liste --- */
+ul{
+  list-style: none;
+}
+section > ul{
+  margin: 0px 40px;
+}
+
+li.titolo{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+li.compito{
+  font-size: 20px;
+  font-weight: normal;
+  margin: 10px 0px;
+}
+li > i{
+  margin-right: 5px;
+}
+  /* --- Check icon compito completato --- */
+.compito.fatto:before{
+  content: "\2713 \A0";
+  color: green;
+}
+  /* --- Cross icon compito non fatto --- */
+.compito.non-fatto:before{
+  content: "\2717 \A0";
+  color: red;
+}
+
+    /* --- Proprietò generali targhette colorate --- */
+.argomento{
+  display: inline-block;
+  min-width: 90px;
+  min-height: 30px;
+  padding: 0px 10px;
+  color: white;
+  font-size: 15px;
+  line-height: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+    /* --- Targhette con colore e scritta "automatica" --- */
+.argomento.blu{
+  background-color: dodgerblue;
+}
+.argomento.blu:after{
+  content: "Editorial";
+}
+
+.argomento.viola{
+  background-color: mediumpurple;
+}
+.argomento.viola:after{
+  content: "Q1 Goals";
+}
+
+.argomento.verde{
+  background-color: green;
+}
+.argomento.verde:after{
+  content: "Recruiting";
+}
+
+.argomento.arancio{
+  background-color: orange;
+}
+.argomento.arancio:after{
+  content: "Mobile";
+}
+
+.argomento.rosa{
+  background-color: violet;
+}
+.argomento.rosa:after{
+  content: "Website";
+}
+
+.argomento.lime{
+  background-color: greenyellow;
+}
+.argomento.lime:after{
+  content: "Sales";
+}
