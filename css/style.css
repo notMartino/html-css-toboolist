@@ -80,6 +80,13 @@ li.compito{
 li > i{
   margin-right: 5px;
 }
+
+  /* --- Proprietà generiche cross e check icon */
+.compito.fatto:before, .compito.non-fatto:before{
+  display: inline-block;
+  vertical-align: middle;
+}
+
   /* --- Check icon compito completato --- */
 .compito.fatto:before{
   content: "\2713 \A0";
@@ -102,47 +109,24 @@ li > i{
   line-height: 30px;
   border-radius: 15px;
   text-align: center;
+  vertical-align: middle;
 }
-
-    /* --- Targhette con colore e scritta "automatica" --- */
+    /* --- Targhette specifiche con colore --- */
 .argomento.blu{
   background-color: dodgerblue;
 }
-.argomento.blu:after{
-  content: "Editorial";
-}
-
 .argomento.viola{
   background-color: mediumpurple;
 }
-.argomento.viola:after{
-  content: "Q1 Goals";
-}
-
 .argomento.verde{
   background-color: green;
 }
-.argomento.verde:after{
-  content: "Recruiting";
-}
-
 .argomento.arancio{
   background-color: orange;
 }
-.argomento.arancio:after{
-  content: "Mobile";
-}
-
 .argomento.rosa{
   background-color: violet;
 }
-.argomento.rosa:after{
-  content: "Website";
-}
-
 .argomento.lime{
   background-color: greenyellow;
-}
-.argomento.lime:after{
-  content: "Sales";
 }
